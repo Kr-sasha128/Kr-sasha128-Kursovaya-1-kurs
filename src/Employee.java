@@ -1,10 +1,11 @@
 public class Employee {
     private int id;
+    private static int idCounter = 1;
     private String fullName;
     private int salary;
 
-    public Employee(int id, String fullName, int salary) {
-        this.id = id;
+    public Employee( String fullName, int salary) {
+        this.id = idCounter++;
         this.fullName = fullName;
         this.salary = salary;
     }
@@ -23,6 +24,10 @@ public class Employee {
 
     public void setSalary(int salary) {
         this.salary = salary;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     @Override

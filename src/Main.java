@@ -2,11 +2,11 @@ public class Main {
     public static void main(String[] args) {
         EmployeeBook employeeBook = new EmployeeBook(5);
 
-        employeeBook.addEmployee(new Employee(1, "Егор Астафьев", 60000));
-        employeeBook.addEmployee(new Employee(2, "Андрей Рязанцев", 70000));
-        employeeBook.addEmployee(new Employee(3, "Фёдор Карташов", 45000));
-        employeeBook.addEmployee(new Employee(4, "Олег Мангол", 47000));
-        employeeBook.addEmployee(new Employee(5, "Иришка Чикипики", 44000));
+        employeeBook.addEmployee(new Employee("Егор Астафьев", 60000));
+        employeeBook.addEmployee(new Employee( "Андрей Рязанцев", 70000));
+        employeeBook.addEmployee(new Employee( "Фёдор Карташов", 45000));
+        employeeBook.addEmployee(new Employee( "Олег Мангол", 47000));
+        employeeBook.addEmployee(new Employee( "Иришка Чикипики", 44000));
 
         System.out.println("Список всех сотрудников:");
         employeeBook.printAllEmployees();
@@ -26,5 +26,6 @@ public class Main {
         employeeBook.printAllEmployees();
 
         System.out.println("Получение сотрудника с id 1: " + employeeBook.getEmployeeById(1));
+
     }
 }
